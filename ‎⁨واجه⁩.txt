@@ -269,3 +269,84 @@ MinimizeButton({
     Stroke = true,
     StrokeColor = Color3.fromRGB(15,15,15)
 })
+
+
+-- إنشاء تاب داخل الواجهة الجديدة
+local Main = MakeTab({Name = "سكربت skybox"})
+
+-- إنشاء Frame داخل التاب
+local Frame = Instance.new("Frame")
+Frame.Parent = Main.Frame
+Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame.Size = UDim2.new(0, 250, 0, 190)
+Frame.Position = UDim2.new(0, 10, 0, 10) -- ضع Frame داخل التاب
+Frame.Active = true
+Frame.Draggable = true
+
+-- عنوان
+local Title = Instance.new("TextLabel")
+Title.Parent = Frame
+Title.Text = "اختر سكن"
+Title.Size = UDim2.new(1, 0, 0, 30)
+Title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.Font = Enum.Font.SourceSansBold
+Title.TextSize = 22
+
+-- Dropdown
+local Dropdown = Instance.new("TextButton")
+Dropdown.Parent = Frame
+Dropdown.Position = UDim2.new(0, 10, 0, 45)
+Dropdown.Size = UDim2.new(1, -20, 0, 35)
+Dropdown.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Dropdown.Text = "اضغط لاختيار سكن"
+Dropdown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dropdown.Font = Enum.Font.SourceSans
+Dropdown.TextSize = 20
+
+-- ListFrame
+local ListFrame = Instance.new("Frame")
+ListFrame.Parent = Frame
+ListFrame.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+ListFrame.Position = UDim2.new(0, 10, 0, 85)
+ListFrame.Size = UDim2.new(1, -20, 0, 95)
+ListFrame.Visible = false
+
+local UIListLayout = Instance.new("UIListLayout")
+UIListLayout.Parent = ListFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+-- 🧥 قائمة السكنات
+local Skins = {
+	["سكن رعب"] = 11714553713,
+	["سكن رعب ٢"] = 4704597991,
+	["سكن رعب ٣"] = 117925030640474,
+	["سكن برشلونه"] = 15795436784,
+	["سكن ريال مدريد"] = 1314630071
+}
+
+-- إنشاء أزرار السكنات
+for name, id in pairs(Skins) do
+	local Button = Instance.new("TextButton")
+	Button.Size = UDim2.new(1, 0, 0, 25)
+	Button.Text = name
+	Button.BackgroundColor3 = Color3.fromRGB(90, 90, 90)
+	Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Button.Font = Enum.Font.SourceSans
+	Button.TextSize = 18
+	Button.Parent = ListFrame
+
+	Button.MouseButton1Click:Connect(function()
+		Dropdown.Text = "✅ " .. name
+		ListFrame.Visible = false
+
+		local args = { id }
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("WearShirt"):InvokeServer(unpack(args))
+		print("تم لبس: " .. name .. " (ID: " .. id .. ")")
+	end)
+end
+
+-- فتح واغلاق القائمة
+Dropdown.MouseButton1Click:Connect(function()
+	ListFrame.Visible = not ListFrame.Visible
+end)

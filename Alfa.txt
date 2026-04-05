@@ -38,7 +38,7 @@ game.StarterGui:SetCore("SendNotification", {
     Duration = 5;
 })
 
-loadstring(game:HttpGet(("https://pastefy.app/zOsZpjJx/raw")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/hassounijamel-cpu/GUIV29/refs/heads/main/NeymarGUI.txt")))()
 MakeWindow({
   Hub = {
     Title = "SCRIPT ALFA V1.5",

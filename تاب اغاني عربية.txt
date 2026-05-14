@@ -1,0 +1,986 @@
+local Tab = Window:MakeTab({"اغاني", "music"})
+
+Tab:AddTextBox({
+  Name = "مشغل اغاني للسكيت بورد",
+  Description = "ملاحظه: يجب ان يكون معك قيمباس الاغاني", 
+  PlaceholderText = "ادخل الكود هنا",
+  Callback = function(Value)
+    local args1 = {
+            [1] = "SkateBoard"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args1))
+ 
+        -- Replacing the static value with the input from the textbox
+        local args2 = {
+            [1] = "PickingScooterMusicText",
+            [2] = Value -- Here, we use the textbox value to replace 35935204
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args2))
+        
+  end
+})
+
+Tab:AddTextBox({
+  Name = "مشغل اغاني للبيت",
+  Description = "ملاحظه: يجب ان يكون معك قيمباس الاغاني", 
+  PlaceholderText = "ادخل الكود هنا",
+  Callback = function(Value)
+    local args = {
+            [1] = "PickHouseMusicText",
+            [2] = input -- Use the user's input here
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1Player1sHous1e"):FireServer(unpack(args))
+  end
+})
+
+Tab:AddTextBox({
+  Name = "مشغل اغاني مجاني بدون قيمباس",
+  Description = "ملاحظه: الناس تسمع فقط اول الاغنيه انت تسمعها كامله", 
+  PlaceholderText = "ادخل الكود هنا",
+  Callback = function(Value)
+    local args1 = {
+            [1] = "SkateBoard"
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args1))
+ 
+        -- Replacing the static value with the input from the textbox
+        local args2 = {
+            [1] = "PickingScooterMusicText",
+            [2] = Value -- Here, we use the textbox value to replace 35935204
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args2))
+        
+  end
+})
+
+local Section = Tab:AddSection({
+	Name = "ملاحظه: يجب ان يكون لديك قيمباس الاغاني لتشغيل الاغاني"
+})
+
+local Section = Tab:AddSection({
+	Name = "الاغاني العربية"
+})
+
+Tab:AddButton({ 	Name  = "ياللالي و يالالا", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "116815742960163"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "اول مره حياتي تورد", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "122957821960545"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ال ما يسئل علي ماريده لا الله وياه الله وياه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "100812988870930"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "حبي طفى بلحظه جثى", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "99349482246952"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ميلي و بخصرك ميلي", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "74895850882339"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "هاذي انتي من عرفك ما تغير فيكي شي | عزف عود", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "133788458900692"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "عزف عود مع كلام ما اعرفه اسمه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "93398454695410"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "لين جاني مع الايام علم و بكيت", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "70943346587828"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "يخبل يجنن كلامه مني انا ما امل", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "99391269377766"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "رسميا من قلب و رب كاريزما و فد شي ينحب", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "89189069089618"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ست البنات مصري", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "128143898719881"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "دبكه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "108761189974962"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "قرو قاردن", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "1836009208"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "فورتنايت ببجي", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "8671258578"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "اغنيه في عالم", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "125151253990122"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "حزين", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "135308045"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "الحمدلله", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "7609175072"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "جاء الليل", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "132182002773837"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "السلام عليكم", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "7038667176"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "صدام", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "8273849195"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ويه ويه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "1164198099"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "حبيبي شنو في", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "7657178494"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "مصري حب", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "93620598835551"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "عراقي حزين", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "80039364766636"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "دبكه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "76698985299412"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ازعاج", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "4776398821"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ضراط", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "4809574295"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "عزف عود", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "114157294180725"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "عزف عود 2", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "104085669063530"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "يمني وين الوفاء", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "116150415085902"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "حزينه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "132378395114388"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "سعودي حزين", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "99123490695024"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "اه ياحلو", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "93620598835551"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "تعالي عند دادي", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "7984027399"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ابو علي حسن و حسين", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "98224127892587"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "اغنيه سوريه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "98640789490482"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "خليجي", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "127593500790634"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "رعب", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "1848748988"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "سبونج بوب", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "2396797933"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "اغنيه عربيه", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "1836685799"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "اوو", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "93123670572331"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })
+
+Tab:AddButton({ 	Name  = "ناني", 	Callback = function()
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "تم التشغيل";
+    Text = "ملاحظه: في اغاني تحتاج الى تقريبا 10 ثواني للتشغيل"; -- ARAB TEAM
+    Duration = 5;
+})
+
+     local args = {
+    [1] = "SkateBoard"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "8842446965"
+}
+ 
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+
+end })

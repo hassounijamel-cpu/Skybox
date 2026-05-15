@@ -6216,3 +6216,196 @@ BangTab:AddToggle({
     Default = false,
     Callback = function(V) getgenv().headSitEnabled = V if not V then forceStand() end end
 })
+
+local Tab8 = Window:MakeTab({Name = "اغاني تظهر بس يمك", Icon = "Home"})
+
+local TweenService = game:GetService("TweenService")
+local SoundService = game:GetService("SoundService")
+
+---------------------------------------------------
+-- توغل 1
+---------------------------------------------------
+local sound1
+
+Tab8:AddToggle({
+  Name = "one day",
+  Default = false,
+  Callback = function(Value)
+
+    local audioUrl = "https://raw.githubusercontent.com/hassounijamel-cpu/67/refs/heads/main/One.mp3"
+    local getAsset = getcustomasset or getsynasset
+    local fileName = "One.mp3"
+
+    if Value then
+      task.spawn(function()
+
+        if not isfile(fileName) then
+          local success, data = pcall(function()
+            return game:HttpGet(audioUrl)
+          end)
+
+          if success and data then
+            writefile(fileName, data)
+          end
+        end
+
+        sound1 = Instance.new("Sound")
+        sound1.Parent = SoundService
+        sound1.SoundId = getAsset(fileName)
+        sound1.Volume = 3
+        sound1.Looped = true
+        sound1:Play()
+
+      end)
+    else
+      if sound1 then
+        TweenService:Create(sound1, TweenInfo.new(1), {Volume = 0}):Play()
+        task.wait(1)
+        sound1:Stop()
+        sound1:Destroy()
+        sound1 = nil
+      end
+    end
+  end
+})
+
+---------------------------------------------------
+-- توغل 2
+---------------------------------------------------
+local sound2
+
+Tab8:AddToggle({
+  Name = "طفل كلبي بغيابك رعد الناصري",
+  Default = false,
+  Callback = function(Value)
+
+    local audioUrl = "https://raw.githubusercontent.com/hassounijamel-cpu/67/refs/heads/main/Tfl.mp3"
+    local getAsset = getcustomasset or getsynasset
+    local fileName = "Tfl.mp3"
+
+    if Value then
+      task.spawn(function()
+
+        if not isfile(fileName) then
+          local success, data = pcall(function()
+            return game:HttpGet(audioUrl)
+          end)
+
+          if success and data then
+            writefile(fileName, data)
+          end
+        end
+
+        sound2 = Instance.new("Sound")
+        sound2.Parent = SoundService
+        sound2.SoundId = getAsset(fileName)
+        sound2.Volume = 3
+        sound2.Looped = true
+        sound2:Play()
+
+      end)
+    else
+      if sound2 then
+        TweenService:Create(sound2, TweenInfo.new(1), {Volume = 0}):Play()
+        task.wait(1)
+        sound2:Stop()
+        sound2:Destroy()
+        sound2 = nil
+      end
+    end
+  end
+})
+
+---------------------------------------------------
+-- توغل 3
+---------------------------------------------------
+local sound3
+
+Tab8:AddToggle({
+  Name = "ودو للطريق الجان",
+  Default = false,
+  Callback = function(Value)
+
+    local audioUrl = "https://raw.githubusercontent.com/hassounijamel-cpu/67/refs/heads/main/Odo.mp3"
+    local getAsset = getcustomasset or getsynasset
+    local fileName = "Odo.mp3"
+
+    if Value then
+      task.spawn(function()
+
+        if not isfile(fileName) then
+          local success, data = pcall(function()
+            return game:HttpGet(audioUrl)
+          end)
+
+          if success and data then
+            writefile(fileName, data)
+          end
+        end
+
+        sound3 = Instance.new("Sound")
+        sound3.Parent = SoundService
+        sound3.SoundId = getAsset(fileName)
+        sound3.Volume = 3
+        sound3.Looped = true
+        sound3:Play()
+
+      end)
+    else
+      if sound3 then
+        TweenService:Create(sound3, TweenInfo.new(1), {Volume = 0}):Play()
+        task.wait(1)
+        sound3:Stop()
+        sound3:Destroy()
+        sound3 = nil
+      end
+    end
+  end
+})
+
+---------------------------------------------------
+-- توغل 4
+---------------------------------------------------
+local sound4
+
+Tab8:AddToggle({
+  Name = "قريبا",
+  Default = false,
+  Callback = function(Value)
+
+    local audioUrl = "حط_رابط_الصوت"
+    local getAsset = getcustomasset or getsynasset
+    local fileName = "audio4.mp3"
+
+    if Value then
+      task.spawn(function()
+
+        if not isfile(fileName) then
+          local success, data = pcall(function()
+            return game:HttpGet(audioUrl)
+          end)
+
+          if success and data then
+            writefile(fileName, data)
+          end
+        end
+
+        sound4 = Instance.new("Sound")
+        sound4.Parent = SoundService
+        sound4.SoundId = getAsset(fileName)
+        sound4.Volume = 3
+        sound4.Looped = true
+        sound4:Play()
+
+      end)
+    else
+      if sound4 then
+        TweenService:Create(sound4, TweenInfo.new(1), {Volume = 0}):Play()
+        task.wait(1)
+        sound4:Stop()
+        sound4:Destroy()
+        sound4 = nil
+      end
+    end
+  end
+})
